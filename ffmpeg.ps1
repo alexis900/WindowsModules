@@ -1,4 +1,4 @@
-﻿$actualDir = "F:\TESTS"
+﻿$actualDir = "F:\"
 $getFiles =  Get-ChildItem -Path $actualDir -Recurse | where {!$_.PsIsContainer -and $_.FullName -notlike "*HEVC.mkv" -and $_.FullName -notlike "* - h265.mkv" -and $_.FullName -notlike "*.nfo" -and $_.FullName -notlike "*.jpg" -and $_.FullName -notlike "*.png" -and $_.FullName -notlike "*.bif"}
 
 function Get-Files {

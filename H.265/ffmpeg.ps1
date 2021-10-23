@@ -17,7 +17,7 @@ while ($num -clt 0) {
     $h265Path = $FullPath.DirectoryName + "\" + $BaseName + " - h265.mkv"
     $h264Path = $FullPath.FullName
     HandBrakeCLI.exe --preset-import-file "C:\Users\aleja\OneDrive\WindowsModules\H.265\preset.json" -Z "H265v6" -i $h264Path -o $h265Path
-    #Remove-Item -Path "$h264Path"
+    Remove-Item -Path "$h264Path"
     Get-NumFiles
 }
 
